@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body {
+            background-color: aquamarine;
+        }
+        footer {
+            background-color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            display: flex;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        #copyright {
+            width: 100%;
+            text-align: center;
+            border-top: 2px solid white;
+            padding-top: 10px;
+        }
+        footer h2 {
+            font-size: 0.9 em;
+        }
+        #aviso {
+            width: 80%;
+            text-align: center;
+        }
+        #redes{
+            width: 20%;
+            padding-left: 10px;
+            text-align: right;
+        }
+        /*Moviles*/
+        @media (max-width:600px){
+            body { 
+                background-color: blue;
+            }
+            footer {
+                display: block;
+                font-size: 1.5pm;
+            }
+            #aviso, #redes {
+                width: 100%;
+            }
+            #redes {
+                text-align: center;
+            }
+        }
+        /*Tablets*/
+        @media (min-width:601px) and (max-width:780px){
+            body { 
+                background-color: orange;
+            }
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <div id="aviso">
+            <h2>Aviso</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia nihil commodi deleniti, optio vero minima esse consectetur exercitationem dolore perferendis. Molestiae qui nisi beatae vero quae dicta quam atque inventore!</p>
+        </div>
+        <div id="redes">
+            <h2>Redes sociales</h2>
+            <p>Twitter/X</p>
+            <p>Instagram</p>
+            <p>Facebook</p>
+        </div>
+
+        <div id="copyright">
+            &copy; IES VIRRY MORCILLO 2024
+        </div>
+    </footer>
+</body>
+</html>
